@@ -1,0 +1,122 @@
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Configure stats pid to 5488
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from C:\Users\jagpr\.config\wandb\settings
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from d:\work\Dissertation\wandb\settings
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:_log_setup():507] Logging user logs to d:\work\Dissertation\wandb\run-20230812_025110-zb43bc22\logs\debug.log
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:_log_setup():508] Logging internal logs to d:\work\Dissertation\wandb\run-20230812_025110-zb43bc22\logs\debug-internal.log
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:_jupyter_setup():453] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000026FCF3031F0>
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:init():547] calling init triggers
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:init():596] starting backend
+2023-08-12 02:51:10,551 INFO    MainThread:5488 [wandb_init.py:init():600] setting up manager
+2023-08-12 02:51:10,556 INFO    MainThread:5488 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-08-12 02:51:10,566 INFO    MainThread:5488 [wandb_init.py:init():606] backend started and connected
+2023-08-12 02:51:10,570 INFO    MainThread:5488 [wandb_run.py:_label_probe_notebook():1233] probe notebook
+2023-08-12 02:51:10,570 INFO    MainThread:5488 [wandb_run.py:_label_probe_notebook():1243] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-08-12 02:51:10,570 INFO    MainThread:5488 [wandb_init.py:init():705] updated telemetry
+2023-08-12 02:51:10,774 INFO    MainThread:5488 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-08-12 02:51:39,276 INFO    Thread-9  :5488 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Python\lib\http\client.py", line 1349, in getresponse
+    response.begin()
+  File "D:\Python\lib\http\client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python\lib\http\client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Python\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Python\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Python\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\work\work\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "d:\work\work\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "d:\work\work\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "d:\work\work\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\work\work\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "d:\work\work\lib\site-packages\wandb\sdk\internal\internal_api.py", line 321, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "d:\work\work\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "d:\work\work\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "d:\work\work\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "d:\work\work\lib\site-packages\requests\sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "d:\work\work\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "d:\work\work\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "d:\work\work\lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2023-08-12 02:52:11,319 ERROR   MainThread:5488 [wandb_init.py:init():764] encountered error: Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2023-08-12 02:52:11,439 ERROR   MainThread:5488 [wandb_init.py:init():1172] Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "d:\work\work\lib\site-packages\wandb\sdk\wandb_init.py", line 1154, in init
+    run = wi.init()
+  File "d:\work\work\lib\site-packages\wandb\sdk\wandb_init.py", line 770, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Configure stats pid to 5488
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from C:\Users\jagpr\.config\wandb\settings
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from d:\work\Dissertation\wandb\settings
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:_log_setup():507] Logging user logs to d:\work\Dissertation\wandb\run-20230812_025234-g5yf89t4\logs\debug.log
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:_log_setup():508] Logging internal logs to d:\work\Dissertation\wandb\run-20230812_025234-g5yf89t4\logs\debug-internal.log
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:init():547] calling init triggers
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:init():596] starting backend
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [wandb_init.py:init():600] setting up manager
+2023-08-12 02:52:34,734 INFO    MainThread:5488 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-08-12 02:52:34,742 INFO    MainThread:5488 [wandb_init.py:init():606] backend started and connected
+2023-08-12 02:52:34,744 INFO    MainThread:5488 [wandb_run.py:_label_probe_notebook():1233] probe notebook
+2023-08-12 02:52:34,744 INFO    MainThread:5488 [wandb_run.py:_label_probe_notebook():1243] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-08-12 02:52:34,744 INFO    MainThread:5488 [wandb_init.py:init():705] updated telemetry
+2023-08-12 02:52:34,807 INFO    MainThread:5488 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-08-12 02:52:38,607 INFO    MainThread:5488 [wandb_run.py:_on_init():2173] communicating current version
+2023-08-12 02:52:38,720 INFO    MainThread:5488 [wandb_run.py:_on_init():2182] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-12 02:52:38,720 INFO    MainThread:5488 [wandb_init.py:init():789] starting run threads in backend
+2023-08-12 02:53:09,088 INFO    MainThread:5488 [wandb_run.py:_console_start():2152] atexit reg
+2023-08-12 02:53:09,088 INFO    MainThread:5488 [wandb_run.py:_redirect():2007] redirect: SettingsConsole.WRAP_RAW
+2023-08-12 02:53:09,088 INFO    MainThread:5488 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-08-12 02:53:09,088 INFO    MainThread:5488 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-08-12 02:53:09,088 INFO    MainThread:5488 [wandb_init.py:init():830] run started, returning control to user process
+2023-08-12 02:55:49,491 INFO    MainThread:5488 [wandb_run.py:_config_callback():1281] config_cb None None {'hidden_size': 256, 'learning_rate': 0.01, 'batch_size': 50, 'max_iterations': 3000}

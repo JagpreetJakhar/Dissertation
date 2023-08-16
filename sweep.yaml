@@ -1,0 +1,14 @@
+name: LorenzAttractorSweep_NODE
+method: random
+
+parameters:
+  hidden_size:
+    values: [4,16,64,128, 256, 512]
+  learning_rate:
+    values: [0.0001,0.001, 0.01, 0.1]
+  batch_size:
+    values: [25, 50,75,100,125,200]
+
+metric:
+  goal: minimize
+  name: Loss

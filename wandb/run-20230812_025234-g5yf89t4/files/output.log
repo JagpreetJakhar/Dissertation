@@ -1,0 +1,44 @@
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+Iter 0000 | Total Loss inf
+Iter 0040 | Total Loss 260.579865
+Iter 0080 | Total Loss 269.378296
+Iter 0120 | Total Loss 249.273743
+Iter 0160 | Total Loss 278.159760
+Iter 0200 | Total Loss inf
+Iter 0240 | Total Loss 273.967590
+Iter 0280 | Total Loss 295.336395
+Iter 0320 | Total Loss 271.388062
+Iter 0360 | Total Loss 266.654449
+Iter 0400 | Total Loss 263.267029
+Iter 0440 | Total Loss 262.635284
+Iter 0480 | Total Loss 266.165924
+Iter 0520 | Total Loss 261.664032
+Iter 0560 | Total Loss 274.130463
+Iter 0600 | Total Loss 257.554962
+Iter 0640 | Total Loss 255.245010
+Iter 0680 | Total Loss 282.407562
+Iter 0720 | Total Loss 266.969940
+Iter 0760 | Total Loss 258.685455
+Iter 0800 | Total Loss 252.132614
+Iter 0840 | Total Loss 255.412506
+Iter 0880 | Total Loss 260.114655
+Iter 0920 | Total Loss 250.547546
+Iter 0960 | Total Loss 261.287933
+Iter 1000 | Total Loss 271.420380
+Iter 1040 | Total Loss 259.715607
+Iter 1080 | Total Loss 260.877197
+Iter 1120 | Total Loss 266.233521
+Iter 1160 | Total Loss 266.515076
+Iter 1200 | Total Loss 263.418274
+Iter 1240 | Total Loss 266.199432
+Iter 1280 | Total Loss 270.980164
+Iter 1320 | Total Loss 282.452942
+Iter 1360 | Total Loss 278.680603
+Iter 1400 | Total Loss 280.882385
+Iter 1440 | Total Loss 282.927460
+Iter 1480 | Total Loss 277.652435
+Iter 1520 | Total Loss 278.316254
+Iter 1560 | Total Loss 285.691406

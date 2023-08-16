@@ -1,0 +1,21 @@
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_17592\658420158.py:16: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  true_lorenz_tensor = torch.tensor(true_lorenz, dtype=torch.float32)
+Epoch [1/1000], Loss: 258.9604
+Epoch [101/1000], Loss: 144.9111
+Epoch [201/1000], Loss: 89.5422
+Epoch [301/1000], Loss: 57.8350
+Epoch [401/1000], Loss: 40.8467
+Epoch [501/1000], Loss: 30.8351
+Epoch [601/1000], Loss: 23.3027
+Epoch [701/1000], Loss: 17.6624
+Epoch [801/1000], Loss: 13.4349
+Epoch [901/1000], Loss: 10.3357
+Epoch [1/1000], Loss: 258.9247
+Epoch [101/1000], Loss: 144.8117
+Epoch [201/1000], Loss: 89.4664
+Epoch [301/1000], Loss: 58.3843
+Epoch [401/1000], Loss: 41.3498
+Epoch [501/1000], Loss: 31.2378
+Epoch [601/1000], Loss: 23.4873
+Epoch [701/1000], Loss: 17.7600
+Epoch [801/1000], Loss: 13.5481
