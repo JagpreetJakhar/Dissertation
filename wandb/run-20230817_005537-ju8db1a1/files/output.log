@@ -1,0 +1,26 @@
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+Iter 0000 | Total Loss 92884839729091852861049511371341824.000000
+Iter 0040 | Total Loss 246.632004
+Iter 0080 | Total Loss 248.642334
+Iter 0120 | Total Loss 249.778442
+Iter 0160 | Total Loss 250.800171
+Iter 0200 | Total Loss 251.732330
+Iter 0240 | Total Loss 252.490921
+Iter 0280 | Total Loss 253.219482
+Iter 0320 | Total Loss 253.811295
+Iter 0360 | Total Loss 254.333130
+Iter 0400 | Total Loss 254.690994
+Iter 0440 | Total Loss 254.999023
+Iter 0480 | Total Loss 255.232574
+Iter 0520 | Total Loss 255.475586
+Iter 0560 | Total Loss 255.779617
+Iter 0600 | Total Loss 256.013336
+Iter 0640 | Total Loss 256.214325
+Iter 0680 | Total Loss 256.441467
+Iter 0720 | Total Loss 256.623993
+Iter 0760 | Total Loss 256.733887
+Iter 0800 | Total Loss 256.805420
+Iter 0840 | Total Loss 256.975830
+Iter 0880 | Total Loss 257.045135
+Iter 0920 | Total Loss 257.092712

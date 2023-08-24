@@ -1,0 +1,110 @@
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_24664\341609573.py:15: UserWarning: Using a target size (torch.Size([10, 1000, 3])) that is different to the input size (torch.Size([1000, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(pred_y, data)
+Iter 0040 | Total Loss 270.169800
+Iter 0080 | Total Loss 270.139343
+Iter 0120 | Total Loss 270.126556
+Iter 0160 | Total Loss 270.111877
+Iter 0200 | Total Loss 270.095001
+Iter 0240 | Total Loss 270.076202
+Iter 0280 | Total Loss 270.055573
+Iter 0320 | Total Loss 270.033173
+Iter 0360 | Total Loss 270.009033
+Iter 0400 | Total Loss 269.983398
+Iter 0440 | Total Loss 269.956146
+Iter 0480 | Total Loss 269.927368
+Iter 0520 | Total Loss 269.897034
+Iter 0560 | Total Loss 269.865204
+Iter 0600 | Total Loss 269.831818
+Iter 0640 | Total Loss 269.796997
+Iter 0680 | Total Loss 269.760681
+Iter 0720 | Total Loss 269.722961
+Iter 0760 | Total Loss 269.683777
+Iter 0800 | Total Loss 269.643005
+Iter 0840 | Total Loss 269.600861
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_24664\2481170697.py:15: UserWarning: Using a target size (torch.Size([10, 1000, 3])) that is different to the input size (torch.Size([1000, 10, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(pred_y, data)
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+Iter 0040 | Total Loss 124.419296
+Iter 0080 | Total Loss 79.704491
+Iter 0120 | Total Loss 79.193596
+Iter 0160 | Total Loss 74.799515
+Iter 0200 | Total Loss 73.965904
+Iter 0240 | Total Loss 72.933136
+Iter 0280 | Total Loss 72.553123
+Iter 0320 | Total Loss 72.302223
+Iter 0360 | Total Loss 72.038254
+Iter 0400 | Total Loss 71.960793
+Iter 0440 | Total Loss 71.957039
+Iter 0480 | Total Loss 71.546227
+Iter 0520 | Total Loss 72.128143
+Iter 0560 | Total Loss 71.873314
+Iter 0600 | Total Loss 71.312202
+Iter 0640 | Total Loss 71.254150
+Iter 0680 | Total Loss 73.109985
+Iter 0720 | Total Loss 70.960762
+Iter 0760 | Total Loss 71.615059
+Iter 0800 | Total Loss 71.092934
+Iter 0840 | Total Loss 70.987213
+Iter 0880 | Total Loss 70.805641
+Iter 0920 | Total Loss 70.753670
+Iter 0960 | Total Loss 70.687477
+Iter 1000 | Total Loss 74.084404
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+d:\work\work\lib\site-packages\torchdiffeq\_impl\misc.py:296: UserWarning: t is not on the same device as y0. Coercing to y0.device.
+  warnings.warn("t is not on the same device as y0. Coercing to y0.device.")
+Iter 0040 | Total Loss 198.761627
+Iter 0080 | Total Loss 186.414963
+Iter 0120 | Total Loss 155.546906
+Iter 0160 | Total Loss 128.579254
+Iter 0200 | Total Loss 102.993523
+Iter 0240 | Total Loss 85.201225
+Iter 0280 | Total Loss 81.619987
+Iter 0320 | Total Loss 81.507668
+Iter 0360 | Total Loss 91.771393
+Iter 0400 | Total Loss 84.425613
+Iter 0440 | Total Loss 83.574783
+Iter 0480 | Total Loss 84.362541
+Iter 0520 | Total Loss 83.496841
+Iter 0560 | Total Loss 87.448540
+Iter 0600 | Total Loss 77.040337
+Iter 0640 | Total Loss 77.388023
+Iter 0680 | Total Loss 75.589241
+Iter 0720 | Total Loss 76.889381
+Iter 0760 | Total Loss 73.621460
+Iter 0800 | Total Loss 73.692169
+Iter 0840 | Total Loss 72.885834
+Iter 0880 | Total Loss 73.327621
+Iter 0920 | Total Loss 73.218147
+Iter 0040 | Total Loss 168.067993
+Iter 0080 | Total Loss 124.587082
+Iter 0120 | Total Loss 140.224716
+Iter 0160 | Total Loss 93.470169
+Iter 0200 | Total Loss 83.067810
+Iter 0240 | Total Loss 72.899086
+Iter 0280 | Total Loss 73.021179
+Iter 0320 | Total Loss 74.547813
+Iter 0360 | Total Loss 74.293282
+Iter 0400 | Total Loss 76.157249
+Iter 0440 | Total Loss 76.062714
+Iter 0480 | Total Loss 75.638298
+Iter 0520 | Total Loss 72.488007
+Iter 0560 | Total Loss 72.587440
+Iter 0600 | Total Loss 74.361397
+Iter 0640 | Total Loss 72.785828
+Iter 0680 | Total Loss 73.499382
+Iter 0720 | Total Loss 72.768272
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
