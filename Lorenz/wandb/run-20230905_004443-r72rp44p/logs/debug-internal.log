@@ -1,0 +1,5 @@
+2023-09-05 00:44:43,814 INFO    StreamThr :32180 [internal.py:wandb_internal():86] W&B internal server running at pid: 32180, started at: 2023-09-05 00:44:43.814823
+2023-09-05 00:44:43,822 DEBUG   HandlerThread:32180 [handler.py:handle_request():144] handle_request: status
+2023-09-05 00:44:43,838 INFO    WriterThread:32180 [datastore.py:open_for_write():85] open: d:\work\Dissertation\Lorenz\wandb\run-20230905_004443-r72rp44p\run-r72rp44p.wandb
+2023-09-05 00:44:43,846 DEBUG   SenderThread:32180 [sender.py:send():369] send: header
+2023-09-05 00:44:44,336 DEBUG   SenderThread:32180 [sender.py:send():369] send: run
