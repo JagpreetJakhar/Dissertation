@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2023-09-05T04:39:58.050214",
+    "startedAt": "2023-09-05T04:39:50.862013",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/JagpreetJakhar/Dissertation.git",
+        "commit": "912d84b8203507a3fb3bf06be64d621c222bd039"
+    },
+    "email": "jagpreetjakhar94@gmail.com",
+    "root": "D:/work/Dissertation",
+    "host": "Jagpreet",
+    "username": "jagpr",
+    "executable": "d:\\work\\work\\Scripts\\python.exe",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2500.0,
+        "min": 0.0,
+        "max": 2500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 0.0,
+            "max": 2500.0
+        }
+    ],
+    "disk": {
+        "total": 493.65429306030273,
+        "used": 68.32986068725586
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.692127227783203
+    }
+}

@@ -1,0 +1,24 @@
+LorenzRNN(
+  (rnn): RNN(3, 512, batch_first=True)
+  (activation): ReLU()
+  (linear): Linear(in_features=512, out_features=3, bias=True)
+)
+Epoch [1/10000], Loss: 253.1868
+Epoch [501/10000], Loss: 89.2812
+Epoch [1001/10000], Loss: 134.8395
+Epoch [1501/10000], Loss: 159.3327
+Epoch [2001/10000], Loss: 157.9943
+Epoch [2501/10000], Loss: 150.6934
+Epoch [3001/10000], Loss: 152.5797
+Epoch [3501/10000], Loss: 151.4978
+Epoch [4001/10000], Loss: 150.8364
+Epoch [4501/10000], Loss: 151.8115
+Epoch [5001/10000], Loss: 151.5071
+Epoch [5501/10000], Loss: 150.2023
+Epoch [6001/10000], Loss: 148.7670
+Epoch [6501/10000], Loss: 151.7164
+Epoch [7001/10000], Loss: 153.2221
+Epoch [7501/10000], Loss: 151.4425
+Epoch [8001/10000], Loss: 148.6725
+Epoch [8501/10000], Loss: 149.9122
+Epoch [9001/10000], Loss: 147.6048

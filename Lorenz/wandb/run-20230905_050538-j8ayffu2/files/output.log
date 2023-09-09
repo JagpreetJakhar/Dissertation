@@ -1,0 +1,48 @@
+
+Iter 0040 | Total Loss 228.765259
+Iter 0080 | Total Loss 186.838806
+Iter 0120 | Total Loss 188.157623
+Iter 0160 | Total Loss 113.658798
+Iter 0200 | Total Loss 205.063507
+Iter 0240 | Total Loss 309.011475
+Iter 0280 | Total Loss 305.551025
+Iter 0320 | Total Loss 412.827606
+Iter 0360 | Total Loss 671.156677
+Iter 0400 | Total Loss 623.545593
+Iter 0440 | Total Loss 242.268204
+Iter 0480 | Total Loss 179.139771
+Iter 0520 | Total Loss 205.474609
+Iter 0560 | Total Loss 177.567566
+Iter 0600 | Total Loss 178.320068
+Iter 0640 | Total Loss 196.443008
+Iter 0680 | Total Loss 144.518539
+Iter 0720 | Total Loss 175.069504
+Iter 0760 | Total Loss 160.289703
+Iter 0800 | Total Loss 97.458069
+Iter 0840 | Total Loss 134.985168
+Iter 0880 | Total Loss 166.485367
+Iter 0920 | Total Loss 150.464462
+Iter 0960 | Total Loss 167.614243
+Iter 1000 | Total Loss 130.664658
+Iter 1040 | Total Loss 151.100494
+Iter 1080 | Total Loss 162.799271
+Iter 1120 | Total Loss 106.286026
+Iter 1160 | Total Loss 158.527512
+Iter 1200 | Total Loss 175.912201
+Iter 1240 | Total Loss 139.079742
+Iter 1280 | Total Loss 131.497818
+Iter 1320 | Total Loss 139.091888
+Iter 1360 | Total Loss 116.474014
+Iter 1400 | Total Loss 152.241913
+Iter 1440 | Total Loss 133.031616
+Iter 1480 | Total Loss 146.492340
+Iter 1520 | Total Loss 197.896271
+Iter 1560 | Total Loss 139.451920
+Iter 1600 | Total Loss 165.575729
+Iter 1640 | Total Loss 115.389206
+Iter 1680 | Total Loss 175.803558
+Iter 1720 | Total Loss 101.348938
+Iter 1760 | Total Loss 133.112152
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

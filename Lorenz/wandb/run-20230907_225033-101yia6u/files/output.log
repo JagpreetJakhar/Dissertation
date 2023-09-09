@@ -1,0 +1,3 @@
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_38004\2949885634.py:35: UserWarning: Using a target size (torch.Size([5000, 1, 3])) that is different to the input size (torch.Size([20000, 1, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(predictions, true_lorenz)
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

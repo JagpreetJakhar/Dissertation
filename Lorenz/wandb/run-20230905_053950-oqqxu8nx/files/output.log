@@ -1,0 +1,5 @@
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_19552\2398243091.py:28: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  frame = np.fromstring(fig.canvas.tostring_rgb(), dtype='uint8', sep='')
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 3070 Ti Laptop GPU
