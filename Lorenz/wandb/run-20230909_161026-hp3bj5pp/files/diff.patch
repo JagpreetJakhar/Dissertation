@@ -1,0 +1,9 @@
+diff --git a/Domain_Wall/saved_models/multiple_forward_field_3_bigdata.pth b/Domain_Wall/saved_models/multiple_forward_field_3_bigdata.pth
+index 79556a9..cd6df15 100644
+Binary files a/Domain_Wall/saved_models/multiple_forward_field_3_bigdata.pth and b/Domain_Wall/saved_models/multiple_forward_field_3_bigdata.pth differ
+diff --git a/Lorenz/PNG/LSTM/0.png b/Lorenz/PNG/LSTM/0.png
+index 1abe450..821fc31 100644
+Binary files a/Lorenz/PNG/LSTM/0.png and b/Lorenz/PNG/LSTM/0.png differ
+diff --git a/Lorenz/real.png b/Lorenz/real.png
+index b6e0ca4..042da67 100644
+Binary files a/Lorenz/real.png and b/Lorenz/real.png differ

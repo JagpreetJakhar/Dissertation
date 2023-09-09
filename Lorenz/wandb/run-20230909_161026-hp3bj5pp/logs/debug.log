@@ -1,0 +1,20 @@
+2023-09-09 16:10:26,507 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Configure stats pid to 26904
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Loading settings from C:\Users\jagpr\.config\wandb\settings
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Loading settings from d:\work\Dissertation\Lorenz\wandb\settings
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-09-09 16:10:26,508 INFO    MainThread:26904 [wandb_init.py:_log_setup():507] Logging user logs to d:\work\Dissertation\Lorenz\wandb\run-20230909_161026-hp3bj5pp\logs\debug.log
+2023-09-09 16:10:26,509 INFO    MainThread:26904 [wandb_init.py:_log_setup():508] Logging internal logs to d:\work\Dissertation\Lorenz\wandb\run-20230909_161026-hp3bj5pp\logs\debug-internal.log
+2023-09-09 16:10:26,509 INFO    MainThread:26904 [wandb_init.py:init():547] calling init triggers
+2023-09-09 16:10:26,509 INFO    MainThread:26904 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-09-09 16:10:26,509 INFO    MainThread:26904 [wandb_init.py:init():571] re-initializing run, found existing run on stack: ieuxrp7r
+2023-09-09 16:10:26,512 INFO    MainThread:26904 [wandb_run.py:_finish():1887] finishing run jagpreetjakhar94/lorenz_lstm/ieuxrp7r
+2023-09-09 16:10:26,714 INFO    MainThread:26904 [jupyter.py:save_history():474] saving 35 cells to _session_history.ipynb
+2023-09-09 16:10:26,715 INFO    MainThread:26904 [wandb_run.py:_config_callback():1281] config_cb ('_wandb', 'session_history') code\_session_history.ipynb None
+2023-09-09 16:10:26,838 INFO    MainThread:26904 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2023-09-09 16:10:26,838 INFO    MainThread:26904 [wandb_init.py:_jupyter_teardown():435] cleaning up jupyter logic
+2023-09-09 16:10:26,838 INFO    MainThread:26904 [wandb_run.py:_atexit_cleanup():2121] got exitcode: 0
+2023-09-09 16:10:26,839 INFO    MainThread:26904 [wandb_run.py:_restore():2104] restore
+2023-09-09 16:10:26,839 INFO    MainThread:26904 [wandb_run.py:_restore():2110] restore done

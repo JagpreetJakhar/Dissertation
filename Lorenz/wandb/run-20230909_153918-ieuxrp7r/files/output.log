@@ -1,0 +1,20 @@
+
+Epoch [1/10], Loss: 255.2833
+Epoch [1/10], Loss: 243.6726
+Epoch [1/10], Loss: 231.6320
+Epoch [1/10], Loss: 218.7299
+Epoch [1/10], Loss: 205.2246
+Epoch [1/10], Loss: 192.1837
+Epoch [1/10], Loss: 180.2262
+Epoch [1/10], Loss: 169.2009
+Epoch [1/10], Loss: 159.0694
+Epoch [1/10], Loss: 149.6023
+Epoch [1/10], Loss: 140.9269
+Epoch [1/10], Loss: 133.0330
+Epoch [1/10], Loss: 125.8119
+Epoch [1/10], Loss: 118.7212
+Epoch [1/10], Loss: 111.9950
+Epoch [1/10], Loss: 106.0869
+Epoch [1/10], Loss: 100.8567
+torch.Size([8, 30, 3]) torch.Size([8, 30, 3])
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
