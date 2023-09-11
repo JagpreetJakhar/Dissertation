@@ -1,0 +1,5 @@
+
+Iter 0050 | Total Loss 74.844269
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

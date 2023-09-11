@@ -1,0 +1,66 @@
+
+Iter 0050 | Total Loss 235248.171875
+Iter 0100 | Total Loss 74.844269
+Iter 0150 | Total Loss 335.410004
+Iter 0200 | Total Loss 317.070526
+Iter 0250 | Total Loss 99.810150
+Iter 0300 | Total Loss 169.165680
+Iter 0350 | Total Loss 181.294708
+Iter 0400 | Total Loss 166.388763
+Iter 0450 | Total Loss 165.231995
+Iter 0500 | Total Loss 158.765839
+Iter 0550 | Total Loss 132.596939
+Iter 0600 | Total Loss 145.811890
+Iter 0650 | Total Loss 117.934593
+Iter 0700 | Total Loss 145.530579
+Iter 0750 | Total Loss 140.852890
+Iter 0800 | Total Loss 151.848938
+Iter 0850 | Total Loss 167.112839
+Iter 0900 | Total Loss 152.016891
+Iter 0950 | Total Loss 144.196136
+Iter 1000 | Total Loss 154.078430
+Iter 1050 | Total Loss 140.849869
+Iter 1100 | Total Loss 128.208130
+Iter 1150 | Total Loss 182.898270
+Iter 1200 | Total Loss 139.656708
+Iter 1250 | Total Loss 133.847687
+Iter 1300 | Total Loss 143.377274
+Iter 1350 | Total Loss 179.296143
+Iter 1400 | Total Loss 143.112686
+Iter 1450 | Total Loss 138.461090
+Iter 1500 | Total Loss 171.353165
+Iter 1550 | Total Loss 178.627014
+Iter 1600 | Total Loss 176.659348
+Iter 1650 | Total Loss 144.122925
+Iter 1700 | Total Loss 169.301117
+Iter 1750 | Total Loss 164.732437
+Iter 1800 | Total Loss 126.669189
+Iter 1850 | Total Loss 56.433964
+Iter 1900 | Total Loss 141.903580
+Iter 1950 | Total Loss 101.039635
+Iter 2000 | Total Loss 126.099617
+Iter 2050 | Total Loss 117.293510
+Iter 2100 | Total Loss 127.279167
+Iter 2150 | Total Loss 129.460510
+Iter 2200 | Total Loss 116.072243
+Iter 2250 | Total Loss 136.704651
+Iter 2300 | Total Loss 128.102890
+Iter 2350 | Total Loss 135.417221
+Iter 2400 | Total Loss 112.231735
+Iter 2450 | Total Loss 133.576767
+Iter 2500 | Total Loss 142.451675
+Iter 2550 | Total Loss 142.801849
+Iter 2600 | Total Loss 133.552521
+Iter 2650 | Total Loss 131.321213
+Iter 2700 | Total Loss 148.503662
+Iter 2750 | Total Loss 129.464005
+Iter 2800 | Total Loss 171.852036
+Iter 2850 | Total Loss 171.355713
+Iter 2900 | Total Loss 134.915283
+Iter 2950 | Total Loss 141.484558
+Iter 3000 | Total Loss 143.472519
+C:\Users\jagpr\AppData\Local\Temp\ipykernel_44672\1864627690.py:11: UserWarning: Using a target size (torch.Size([5000, 1, 3])) that is different to the input size (torch.Size([5000, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  test_0_loss = F.mse_loss(predicted_trajectory, test[idx].to(device))
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 3070 Ti Laptop GPU
