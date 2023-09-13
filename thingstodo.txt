@@ -1,5 +1,0 @@
-sample on more timesteps
-try zero field
-field as forced in nn forward
-h\-t grad in forward
-differetn initial points
