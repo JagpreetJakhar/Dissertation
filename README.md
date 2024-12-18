@@ -41,10 +41,10 @@ The dissertation explores the performance of RNNs, LSTMs, and NODEs on three dif
 <img src="PNG/readme/lorenz.png" alt="Lorenz Attractor" width="400" height="300">
 
 3.  **Magnetic Domain Wall:** Dynamics of a domain wall placed between two anti-notches of nickel nanowire which is fed an oscillating magnetic field. The models are used to predict the domain wall's position and angle (or magnetization angle).
-
+<div style="display: flex; gap: 10px;">
 <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="400" height="300">
 <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="400" height="300">
-
+</div>
 
 ## Model Evaluation
 
@@ -59,6 +59,29 @@ The models were evaluated based on the following metrics:
 The results indicate that:
 
 *   Neural ODEs outperform traditional RNNs and LSTMs in modeling the long-term dynamics of chaotic systems, especially in retaining the overall structure of the systems' behavior.
+<div style="display: flex; gap: 10px;">
+<img src="PNG/readme/lorvflstm.png" alt="LSTM VF lorenz" width="400" height="300">
+<img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="400" height="300">
+<img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="400" height="300">
+</div>
+<div style="display: flex; gap: 10px;">
+<img src="PNG/readme/dpvfrnn.png" alt="DP VF RNN" width="400" height="300">
+<img src="PNG/readme/dpvflstm.png" alt="DP VF LSTM" width="400" height="300">
+<img src="PNG/readme/dpvfnode.png" alt="DP VF NODE" width="400" height="300">
+</div>
+<div style="display: flex; gap: 10px;">
+<img src="PNG/readme/dwvfs.png" alt="Node single Field" width="400" height="300">
+<img src="PNG/readme/dw_single.png" alt="Single Field Domain Wall" width="400" height="300">
+</div>
+<div style="display: flex; gap: 10px;">
+<img src="PNG/readme/dwvfm.png" alt="Node Multiple Field" width="400" height="300">
+<img src="PNG/readme/dw_multiple.png" alt="Multiple Field Domain Wall" width="400" height="300">
+</div>
+<div style="display: flex; gap: 10px;">
+<img src="PNG/readme/dwsftm.png" alt="Node Single Field Predictions" width="400" height="300">
+<img src="PNG/readme/dwmft.png" alt="Node Multiple Field Predictions" width="400" height="300">
+</div>
+
 *   However, NODE models have some limitations; for instance, their approximation of chaotic systems falls out of phase with the true data.
 *  The Neural ODE architecture has inherent limitations, including its inability to solve Stiff ODEs and struggles when systems display dynamic and chaotic behavior.
 *  The model's ability to learn the dynamics of the Domain Wall problem was limited, indicating a difficulty with handling abrupt changes in the system.
