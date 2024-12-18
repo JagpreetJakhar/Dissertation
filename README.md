@@ -18,7 +18,7 @@ This repository includes the following:
 ## Key Concepts
 
 *   **Neural Ordinary Differential Equations (NODEs):** A class of neural network models that parameterize the derivative of a system's state, allowing for continuous-time modeling using ODE solvers.
-![Neural ODE Arch](PNG/readme/resnodevfields.png)
+<img src="PNG/readme/resnodevfields.png" alt="Neural ODE Arch" width="100" height="150">
 *   **Dynamical Systems:** Systems that evolve over time, often described by differential equations.
 *   **Chaotic Systems:** Dynamical systems that exhibit sensitivity to initial conditions, making long-term predictions difficult. Examples include the double pendulum and the Lorenz attractor.
 *   **Recurrent Neural Networks (RNNs):** Neural networks designed for sequential data that use hidden states to maintain memory of previous inputs.
