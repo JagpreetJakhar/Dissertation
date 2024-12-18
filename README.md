@@ -18,8 +18,9 @@ This repository includes the following:
 ## Key Concepts
 
 *   **Neural Ordinary Differential Equations (NODEs):** A class of neural network models that parameterize the derivative of a system's state, allowing for continuous-time modeling using ODE solvers.
-<img src="PNG/readme/resnodevfields.png" alt="Neural ODE Arch" width="100" height="150">
-*   **Dynamical Systems:** Systems that evolve over time, often described by differential equations.
+<img src="PNG/readme/resnodevfields.png" alt="Neural ODE Arch" width="200" height="150">
+
+
 *   **Chaotic Systems:** Dynamical systems that exhibit sensitivity to initial conditions, making long-term predictions difficult. Examples include the double pendulum and the Lorenz attractor.
 *   **Recurrent Neural Networks (RNNs):** Neural networks designed for sequential data that use hidden states to maintain memory of previous inputs.
 *   **Long Short-Term Memory Networks (LSTMs):** An enhanced type of RNN that uses memory cells and gate units to address the vanishing and exploding gradient problem in RNNs.
@@ -31,6 +32,7 @@ This repository includes the following:
 The dissertation explores the performance of RNNs, LSTMs, and NODEs on three different physical systems:
 
 1.  **Double Pendulum:** A classic example of a chaotic dynamical system. The models are used to predict the angles and angular velocities of the two pendulum arms.
+<img src="PNG/readme/pendulum.gif" alt="Double Pendulum" width="400" height="300">
 2.  **Lorenz Attractor:** A well-known chaotic system in atmospheric science. The models are used to predict the evolution of the attractor's state variables over time.
 3.  **Magnetic Domain Wall:** Dynamics of a domain wall placed between two anti-notches of nickel nanowire which is fed an oscillating magnetic field. The models are used to predict the domain wall's position and angle (or magnetization angle).
 
