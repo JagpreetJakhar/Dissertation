@@ -59,17 +59,17 @@ The models were evaluated based on the following metrics:
 The results indicate that:
 
 *   Neural ODEs outperform traditional RNNs and LSTMs in modeling the long-term dynamics of chaotic systems, especially in retaining the overall structure of the systems' behavior.
-<div style="display: flex; gap: 10px;">
-<img src="PNG/readme/lorvflstm.png" alt="LSTM VF lorenz" width="400" height="300">
-<img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="400" height="300">
-<img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="400" height="300">
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="PNG/readme/lorvflstm.png" alt="LSTM VF lorenz" width="300" height="200">
+  <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="300" height="200">
+  <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="300" height="200">
 </div>
-<div style="display: flex; gap: 10px;">
+<div style="display: flex; justify-content: space-between; gap: 10px;">
 <img src="PNG/readme/dpvfrnn.png" alt="DP VF RNN" width="400" height="300">
 <img src="PNG/readme/dpvflstm.png" alt="DP VF LSTM" width="400" height="300">
 <img src="PNG/readme/dpvfnode.png" alt="DP VF NODE" width="400" height="300">
 </div>
-<div style="display: flex; gap: 10px;">
+<div style="display: flex; justify-content: space-between; gap: 10px;">
 <img src="PNG/readme/dwvfs.png" alt="Node single Field" width="400" height="300">
 <img src="PNG/readme/dw_single.png" alt="Single Field Domain Wall" width="400" height="300">
 </div>
