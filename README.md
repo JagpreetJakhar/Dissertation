@@ -110,26 +110,15 @@ The models are analyzed by their performance on the
  three test sets one by one using **Error Metrics**, **visualizations** and **Vector Fields**.
 
 ### Lorenz Attractor Vector Fields
-<div align="center">
+<p align="center">
+  <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="30%" />
+  <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="30%" />
+  <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="30%" />
+</p>
 
-  ![LSTM VF Lorenz](PNG/readme/lorvflstm.png)
-  <br>
-  **LSTM Vector Field Lorenz**
-</div>
-
-<div align="center">
-
-  ![RNN VF Lorenz](PNG/readme/lorvfrnn.png)
-  <br>
-  **RNN Vector Field Lorenz**
-</div>
-
-<div align="center">
-
-  ![NODE VF Lorenz](PNG/readme/lorvfnode.png)
-  <br>
-  **NODE Vector Field Lorenz**
-</div>
+<p align="center">
+  **LSTM Vector Field Lorenz** &nbsp;&nbsp;&nbsp; **RNN Vector Field Lorenz** &nbsp;&nbsp;&nbsp; **NODE Vector Field Lorenz**
+</p>
 
 ### Double Pendulum Vector Fields
 <div style="display: flex; justify-content: center; gap: 20px;">
