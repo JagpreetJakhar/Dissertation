@@ -112,75 +112,16 @@ The models are analyzed by their performance on the
  three test sets one by one using **Error Metrics**, **visualizations** and **Vector Fields**.
 
 ### Lorenz Attractor Vector Fields
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="300" height="200">
-    <figcaption>LSTM Vector Field Lorenz</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="300" height="200">
-    <figcaption>RNN Vector Field Lorenz</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="300" height="200">
-    <figcaption>NODE Vector Field Lorenz</figcaption>
-  </figure>
-</div>
+![Lorenz Attractor Vector Fields](PNG/readme/lor_vf.png)
 
 ### Double Pendulum Vector Fields
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/dpvfrnn.png" alt="DP VF RNN" width="300" height="200">
-    <figcaption>DP Vector Field RNN</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/dpvflstm.png" alt="DP VF LSTM" width="300" height="200">
-    <figcaption>DP Vector Field LSTM</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/dpvfnode.png" alt="DP VF NODE" width="300" height="200">
-    <figcaption>DP Vector Field NODE</figcaption>
-  </figure>
-</div>
+ ![Double Pendulum Vector Fields](PNG/readme/dp_vf.png)
 
 ### Domain Wall Dynamics (Single Field vs. Multiple Fields)
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/dw_single.png" alt="Single Field Domain Wall" width="300" height="200">
-    <figcaption>Single Field Domain Wall</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/dwvfs.png" alt="Single Field Domain Wall predictions" width="300" height="200">
-    <figcaption>Single Field Domain Wall Predicted Vector Field</figcaption>
-  </figure>
-</div>
-<br>
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/dw_multiple.png" alt="Multiple Field Domain Wall" width="300" height="200">
-    <figcaption>Multiple Field Domain Wall</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/dwvfm.png" alt="Multiple Field Domain Wall Predictions" width="300" height="200">
-    <figcaption>Multiple Field Domain Wall Predicted Vector Field</figcaption>
-  </figure>
-</div>
+![Domain Wall Vector Fields](PNG/readme/dw_vf.png)
 
-<br>
-
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/dwsft.png" alt="Node Single Field predictions" width="400" height="300">
-    <figcaption>NODE Single Field predictions</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/dwmft.png" alt="Node Multiple Field Predictions" width="400" height="300">
-    <figcaption>NODE Multiple Field Predictions</figcaption>
-  </figure>
-</div>
-
-**Key Observations:**
+## Key Observations:
 - Neural ODEs are a significant improvement over RNNs and LSTMs for modeling dynamical and chaotic systems over long time horizons. However, they are still far from accurately simulating these systems.
 - Neural ODEs as an architecture have inherent limitations, which restrict the functions they can learn or represent i.e. they are not universal approximations.
 - NODEs struggle to learn the dynamics of the domain wall, despite the fact that these are coupled first-order differential equations, which they should theoretically be able to learn.
