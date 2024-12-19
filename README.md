@@ -2,6 +2,11 @@
 
 This repository contains the code and resources for an MSc dissertation under supervision of [**Dr Matt Ellis**](https://www.sheffield.ac.uk/cs/people/academic/matt-ellis) in The University of Sheffeild. The application of Neural Ordinary Differential Equations (NODEs) to model complex physical systems is evaluated. The study focuses on three distinct physical systems: **the double pendulum, the Lorenz attractor, and the magnetic domain wall problem.** The objective is to investigate and compare the predictive performance of Recurrent Neural Networks (RNNs), Long Short-Term Memory networks (LSTMs), and Neural ODEs.
 
+| ![Double Pendulum Vector Fields](PNG/readme/1.gif "Double Pendulum Vector Fields") | ![Domain Wall](PNG/readme/dwall.gif "Domain Wall") |
+|:--:|:--:|
+| **Double Pendulum & Lorenz Attractor** | **Domain Wall** |
+
+
 ---
 
 
@@ -110,7 +115,7 @@ The models are analyzed by their performance on the
 
 | ![Domain Wall Single Field](PNG/readme/dwsft.png) | ![Domain Wall Multiple Fields Predictions](PNG/readme/dwmft.png) |
 |:--:|:--:|
-| **Domain Wall Single Field** | **Domain Wall Multiple Fields Predictions** |
+| **Domain Wall Single Field Predictions** | **Domain Wall Multiple Fields Predictions** |
 
 ## Key Observations:
 - Neural ODEs are a significant improvement over RNNs and LSTMs for modeling dynamical and chaotic systems over long time horizons. However, they are still far from accurately simulating these systems.
