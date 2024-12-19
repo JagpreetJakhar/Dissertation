@@ -52,7 +52,7 @@ This repository contains the code and resources for an MSc dissertation under su
 <div style="display: flex; justify-content: left; gap: 20px;">
 <div style="display: flex; flex-direction: column; justify-content: left;">
     <p><b>Data Generation:</b>  The dataset for Lorenz attractor is made by using ten random initial points within a range
- of 15 to-15 [25] which cause the attractor to behave chaotically, displaying the butterfly-like
+ of 15 to -15 which cause the attractor to behave chaotically, displaying the butterfly-like
  effect when plotted. The dataset is divided into with first six points as the training set, the
  seventh point as the validation set, and the last three as the test set, an approach similar to
  that of the double pendulum considered previously</p>
@@ -110,19 +110,25 @@ The models are analyzed by their performance on the
  three test sets one by one using **Error Metrics**, **visualizations** and **Vector Fields**.
 
 ### Lorenz Attractor Vector Fields
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure>
-    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="300" height="200">
-    <figcaption>LSTM Vector Field Lorenz</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="300" height="200">
-    <figcaption>RNN Vector Field Lorenz</figcaption>
-  </figure>
-  <figure>
-    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="300" height="200">
-    <figcaption>NODE Vector Field Lorenz</figcaption>
-  </figure>
+<div align="center">
+
+  ![LSTM VF Lorenz](PNG/readme/lorvflstm.png)
+  <br>
+  **LSTM Vector Field Lorenz**
+</div>
+
+<div align="center">
+
+  ![RNN VF Lorenz](PNG/readme/lorvfrnn.png)
+  <br>
+  **RNN Vector Field Lorenz**
+</div>
+
+<div align="center">
+
+  ![NODE VF Lorenz](PNG/readme/lorvfnode.png)
+  <br>
+  **NODE Vector Field Lorenz**
 </div>
 
 ### Double Pendulum Vector Fields
