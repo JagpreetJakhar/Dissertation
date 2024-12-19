@@ -91,11 +91,11 @@ This repository contains the code and resources for an MSc dissertation under su
 
   <div style="display: flex; flex-direction: column; gap: 15px; max-width: 50%; flex: 1;">
     <div>
-      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="400" height="300">
+      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="300" height="200">
       <p align="center"><b>Domain Wall 1:</b> Dynamics of a domain wall placed between two anti-notches of nickel nanowire under oscillating magnetic fields.</p>
     </div>
     <div>
-      <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="400" height="300">
+      <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="300" height="200">
       <p align="center"><b>Domain Wall 2:</b> Continuation of dynamics under varying field intensities.</p>
     </div>
   </div>
@@ -112,15 +112,15 @@ The models are analyzed by their performance on the
 ### Lorenz Attractor Vector Fields
 <div style="display: flex; justify-content: center; gap: 20px;">
   <figure>
-    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="48" height="48">
+    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="300" height="200">
     <figcaption>LSTM Vector Field Lorenz</figcaption>
   </figure>
   <figure>
-    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="48" height="48">
+    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="300" height="200">
     <figcaption>RNN Vector Field Lorenz</figcaption>
   </figure>
   <figure>
-    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="48" height="48">
+    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="300" height="200">
     <figcaption>NODE Vector Field Lorenz</figcaption>
   </figure>
 </div>
