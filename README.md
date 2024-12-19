@@ -13,8 +13,6 @@ This repository contains the code and resources for an MSc dissertation under su
 ## Key Concepts
 
 - **Neural Ordinary Differential Equations (NODEs)**: A neural network architecture that parameterizes the derivative of a system's state, enabling continuous-time modeling with ODE solvers popularised by Ricky TQ Chen in the paper [**Neural Ordinary Differential Equations**](https://arxiv.org/abs/1806.07366).
-  
-  <img src="PNG/readme/resnodevfields.png" alt="Neural ODE Architecture" width="250" height="180">
 
 - **Chaotic Systems**: Dynamical systems with **sensitive dependence on initial conditions**, such as the double pendulum and the Lorenz attractor.
 - **Recurrent Neural Networks (RNNs)**: Sequential models using hidden states to maintain memory over time.
