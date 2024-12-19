@@ -68,8 +68,9 @@ This repository contains the code and resources for an MSc dissertation under su
 
 ### Magnetic Domain Wall Dynamics
 
-<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
-  <div style="display: flex; flex-direction: column; justify-content: left; gap: 15px; max-width: 50%; flex: 1;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+  <!-- Left Column: Text content -->
+  <div style="flex: 1; max-width: 50%; padding-right: 20px;">
     <p><b>Data Generation:</b> The Magnetic Domain Wall dynamics are simulated using ‘DW oscillator.py’. The class is initialized with various physical parameters, including:</p>
     <ul>
       <li>Magnetic saturation moment (Ms)</li>
@@ -81,23 +82,26 @@ This repository contains the code and resources for an MSc dissertation under su
       <li>Oscillation frequency (f set to 0.5)</li>
       <li>Time-dependent external magnetic field (htime)</li>
     </ul>
-    <p>The function <b>run_field_sequence (RFD)</b> takes the input range of fields (low, high), the number of fields to be generated, the duration of each field, initial domain wall position, and angle to generate and simulate the set of fields randomly within that range. It returns the domain wall position, angle, and input sequence upon which the NODE is trained.
-    </p>
-    <p> The external magnetic field, which serves as the oscillating input field to the domain wall, is also used by calculating its gradient using a function sequence. This gradient is attached in the forward pass of the Multilayer Perceptron to always have the correct driving force. </p>
+    <p>The function <b>run_field_sequence (RFD)</b> takes the input range of fields (low, high), the number of fields to be generated, the duration of each field, initial domain wall position, and angle to generate and simulate the set of fields randomly within that range. It returns the domain wall position, angle, and input sequence upon which the NODE is trained.</p>
+    <p>The external magnetic field, which serves as the oscillating input field to the domain wall, is also used by calculating its gradient using a function sequence. This gradient is attached in the forward pass of the Multilayer Perceptron to always have the correct driving force.</p>
     <p><b>ODE-Solver:</b> The ODE-solver parametrizes a 5-layer MultiLayer Perceptron, which takes an input of size three and outputs two values: the predicted Domain Wall Position and Angle. The data simulated by the RFD function is first normalized to the range [-1, 1], as the domain wall position initially is at a different scale than the angles, which are in radians. These are then stacked together to form the data along with the time given by the RFD function.</p>
     <p>This data is then fed to the ODE Solver using the adjoint method and Dormand-Prince solver (dopri5) to make a prediction on the domain wall position and angle using the initial position and time steps selected randomly from the data using a get batch function. The Huber Loss function is used over the Mean Squared Error Loss function, as it gives better results when training. Once the prediction error is calculated, backpropagation of error signals is done using the Adjoint method.</p>
     <p><b>Optimization:</b> The trained model is tested on a set containing randomly generated fields by the RFD function. The AdamW optimizer, a modification of the Adam optimizer, is used, which decouples weight decay from the gradient update.</p>
   </div>
 
-  <div style="display: flex; flex-direction: column; gap: 15px; max-width: 50%; flex: 1;">
-    <div>
-      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="200" height=auto>
+  <!-- Right Column: Images with text wrapping around -->
+  <div style="flex: 1; max-width: 50%; display: flex; flex-direction: column; gap: 15px;">
+    <div style="float: left; margin-right: 15px;">
+      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="200" style="height: auto;">
       <p align="center"><b>Domain Wall 1:</b> Dynamics of a domain wall placed between two anti-notches of nickel nanowire under oscillating magnetic fields.</p>
-            <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="200" height=auto>
+    </div>
+    <div style="float: left; margin-right: 15px;">
+      <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="200" style="height: auto;">
       <p align="center"><b>Domain Wall 2:</b> Continuation of dynamics under varying field intensities.</p>
     </div>
   </div>
 </div>
+
 
 
 ---
