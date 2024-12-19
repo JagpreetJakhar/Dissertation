@@ -30,41 +30,39 @@ This repository contains the code and resources for an MSc dissertation under su
 ## Experiments
 
 ### Double Pendulum
+![Double Pendulum](PNG/readme/pendulum.gif)
 
-<div style="display: flex; justify-content: center; gap: 10px;">
-<div style="display: flex; flex-direction: column; justify-content: left;">
-    <p><b>Data Generation:</b> The data for the Double Pendulum problem is created using ten random initial conditions and then using the torchdiffeq odeint solver to generate the data.</p>
-<p>Then three model architectures are trained and tested on this data, namely a vanilla
- Recurrent Neural Network(RNN), a vanilla Long Short Term Memory RNN (LSTM), which
- are used as a baseline to compare against the performance of the final NODE model. Mean
- Squared Error is used as the metric along with vector fields of the predictions made by the
- models to draw analysis and conclusions</p>
-  </div>
-  <div>
-    <img src="PNG/readme/pendulum.gif" alt="Double Pendulum" width="200" height="150">
-    <p align="center"><b>Double Pendulum:</b> A classic example of a chaotic system. Models predict the angles and angular velocities of the pendulum arms.</p>
-  </div>
-  
-</div>
+**Double Pendulum:** A classic example of a chaotic system. Models predict the angles and angular velocities of the pendulum arms.
+
+## Data Generation
+
+The data for the Double Pendulum problem is created using ten random initial conditions and then using the torchdiffeq odeint solver to generate the data.
+
+Then three model architectures are trained and tested on this data, namely a vanilla Recurrent Neural Network (RNN) and a vanilla Long Short Term Memory RNN (LSTM), which are used as a baseline to compare against the performance of the final NODE model. Mean Squared Error is used as the metric along with vector fields of the predictions made by the models to draw analysis and conclusions.
+
+
+
 
 
 ### Lorenz Attractor
-<div style="display: flex; justify-content: left; gap: 20px;">
-<div style="display: flex; flex-direction: column; justify-content: left;">
-    <p><b>Data Generation:</b>  The dataset for Lorenz attractor is made by using ten random initial points within a range
- of 15 to -15 which cause the attractor to behave chaotically, displaying the butterfly-like
- effect when plotted. The dataset is divided into with first six points as the training set, the
- seventh point as the validation set, and the last three as the test set, an approach similar to
- that of the double pendulum considered previously</p>
-<p>TNow, the three models are trained on the training data, Mean Squared Error, Visualisation,
- and Vector Fields and evaluated to compare the three models. The abilities of the model
- being evaluated are Forecasting Ability and Generalizability.</p>
-  </div>
-  <div>
-    <img src="PNG/readme/lorenz.png" alt="Lorenz Attractor" width="300" height="200">
-    <p align="center"><b>Lorenz Attractor:</b> A well-known chaotic system in atmospheric science. Models predict the evolution of state variables over time.</p>
-  </div>
-</div>
+
+![Lorenz Attractor](PNG/readme/lorenz.png)
+
+**Lorenz Attractor**: A well-known chaotic system in atmospheric science. Models predict the evolution of state variables over time.
+
+## Data Generation
+
+The dataset for Lorenz attractor is made by using ten random initial points within a range of 15 to -15, which cause the attractor to behave chaotically, displaying the butterfly-like effect when plotted. The dataset is divided into:
+- The first six points as the training set
+- The seventh point as the validation set
+- The last three as the test set
+
+This approach is similar to that of the double pendulum considered previously.
+
+Now, the three models are trained on the training data, Mean Squared Error, Visualisation, and Vector Fields, and evaluated to compare the three models. The abilities of the model being evaluated are Forecasting Ability and Generalizability.
+
+
+
 
 ### Magnetic Domain Wall Dynamics
 ![Domain Walls](PNG/readme/dw.png)
@@ -109,6 +107,10 @@ The models are analyzed by their performance on the
 ### Domain Wall Dynamics (Single Field vs. Multiple Fields)
 
 ![Domain Wall Vector Fields](PNG/readme/dw_vf.png)
+
+| ![Domain Wall Single Field](PNG/readme/dwsft.png) | ![Domain Wall Multiple Fields Predictions](PNG/readme/dwmft.png) |
+|:--:|:--:|
+| **Domain Wall Single Field** | **Domain Wall Multiple Fields Predictions** |
 
 ## Key Observations:
 - Neural ODEs are a significant improvement over RNNs and LSTMs for modeling dynamical and chaotic systems over long time horizons. However, they are still far from accurately simulating these systems.
