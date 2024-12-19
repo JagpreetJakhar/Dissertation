@@ -91,9 +91,9 @@ This repository contains the code and resources for an MSc dissertation under su
 
   <div style="display: flex; flex-direction: column; gap: 15px; max-width: 50%; flex: 1;">
     <div>
-      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="300" height="200">
+      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="200" height=auto>
       <p align="center"><b>Domain Wall 1:</b> Dynamics of a domain wall placed between two anti-notches of nickel nanowire under oscillating magnetic fields.</p>
-            <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="300" height="200">
+            <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="200" height=auto>
       <p align="center"><b>Domain Wall 2:</b> Continuation of dynamics under varying field intensities.</p>
     </div>
   </div>
