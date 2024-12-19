@@ -1,0 +1,6 @@
+torch>=1.10.0
+torchdiffeq>=0.2.3
+numpy>=1.21.0
+matplotlib>=3.4.3
+scipy>=1.7.0
+wandb>=0.12.0
