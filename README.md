@@ -112,15 +112,15 @@ The models are analyzed by their performance on the
 ### Lorenz Attractor Vector Fields
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
   <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
-    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" style="width: 33%; height: auto;">
+    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" style="width: auto; height: auto;">
     <figcaption>LSTM Vector Field Lorenz</figcaption>
   </figure>
   <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
-    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" style="width: 33%; height: auto;">
+    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" style="width: auto; height: auto;">
     <figcaption>RNN Vector Field Lorenz</figcaption>
   </figure>
   <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
-    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" style="width: 33%; height: auto;">
+    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" style="width: auto; height: auto;">
     <figcaption>NODE Vector Field Lorenz</figcaption>
   </figure>
 </div>
