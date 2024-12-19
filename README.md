@@ -51,12 +51,14 @@ This repository contains the code and resources for an MSc dissertation under su
 ### Lorenz Attractor
 <div style="display: flex; justify-content: left; gap: 20px;">
 <div style="display: flex; flex-direction: column; justify-content: left;">
-    <p><b>Data Generation:</b> The data for the Double Pendulum problem is created using ten random initial conditions and then using the torchdiffeq odeint solver to generate the data.</p>
-<p>Then three model architectures are trained and tested on this data, namely a vanilla
- Recurrent Neural Network(RNN), a vanilla Long Short Term Memory RNN (LSTM), which
- are used as a baseline to compare against the performance of the final NODE model. Mean
- Squared Error is used as the metric along with vector fields of the predictions made by the
- models to draw analysis and conclusions</p>
+    <p><b>Data Generation:</b>  The dataset for Lorenz attractor is made by using ten random initial points within a range
+ of 15 to-15 [25] which cause the attractor to behave chaotically, displaying the butterfly-like
+ effect when plotted. The dataset is divided into with first six points as the training set, the
+ seventh point as the validation set, and the last three as the test set, an approach similar to
+ that of the double pendulum considered previously</p>
+<p>TNow, the three models are trained on the training data, Mean Squared Error, Visualisation,
+ and Vector Fields and evaluated to compare the three models. The abilities of the model
+ being evaluated are Forecasting Ability and Generalizability.</p>
   </div>
   <div>
     <img src="PNG/readme/lorenz.png" alt="Lorenz Attractor" width="300" height="200">
@@ -66,16 +68,39 @@ This repository contains the code and resources for an MSc dissertation under su
 
 ### Magnetic Domain Wall Dynamics
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <div>
-    <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="400" height="300">
-    <p align="center"><b>Domain Wall 1:</b> Dynamics of a domain wall placed between two anti-notches of nickel nanowire under oscillating magnetic fields.</p>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+  <div style="display: flex; flex-direction: column; justify-content: left; gap: 15px; max-width: 50%; flex: 1;">
+    <p><b>Data Generation:</b> The Magnetic Domain Wall dynamics are simulated using ‘DW oscillator.py’. The class is initialized with various physical parameters, including:</p>
+    <ul>
+      <li>Magnetic saturation moment (Ms)</li>
+      <li>Exchange stiffness constant (A)</li>
+      <li>Gilbert damping coefficient (α)</li>
+      <li>Dimensions of the magnetic system (L)</li>
+      <li>Anisotropy constants (a and b)</li>
+      <li>External magnetic field amplitude (hconst)</li>
+      <li>Oscillation frequency (f set to 0.5)</li>
+      <li>Time-dependent external magnetic field (htime)</li>
+    </ul>
+    <p>The function <b>run_field_sequence (RFD)</b> takes the input range of fields (low, high), the number of fields to be generated, the duration of each field, initial domain wall position, and angle to generate and simulate the set of fields randomly within that range. It returns the domain wall position, angle, and input sequence upon which the NODE is trained.
+    </p>
+    <p> The external magnetic field, which serves as the oscillating input field to the domain wall, is also used by calculating its gradient using a function sequence. This gradient is attached in the forward pass of the Multilayer Perceptron to always have the correct driving force. </p>
+    <p><b>ODE-Solver:</b> The ODE-solver parametrizes a 5-layer MultiLayer Perceptron, which takes an input of size three and outputs two values: the predicted Domain Wall Position and Angle. The data simulated by the RFD function is first normalized to the range [-1, 1], as the domain wall position initially is at a different scale than the angles, which are in radians. These are then stacked together to form the data along with the time given by the RFD function.</p>
+    <p>This data is then fed to the ODE Solver using the adjoint method and Dormand-Prince solver (dopri5) to make a prediction on the domain wall position and angle using the initial position and time steps selected randomly from the data using a get batch function. The Huber Loss function is used over the Mean Squared Error Loss function, as it gives better results when training. Once the prediction error is calculated, backpropagation of error signals is done using the Adjoint method.</p>
+    <p><b>Optimization:</b> The trained model is tested on a set containing randomly generated fields by the RFD function. The AdamW optimizer, a modification of the Adam optimizer, is used, which decouples weight decay from the gradient update.</p>
   </div>
-  <div>
-    <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="400" height="300">
-    <p align="center"><b>Domain Wall 2:</b> Continuation of dynamics under varying field intensities.</p>
+
+  <div style="display: flex; flex-direction: column; gap: 15px; max-width: 50%; flex: 1;">
+    <div>
+      <img src="PNG/readme/dw1.gif" alt="Domain Wall 1" width="400" height="300">
+      <p align="center"><b>Domain Wall 1:</b> Dynamics of a domain wall placed between two anti-notches of nickel nanowire under oscillating magnetic fields.</p>
+    </div>
+    <div>
+      <img src="PNG/readme/dw2.gif" alt="Domain Wall 2" width="400" height="300">
+      <p align="center"><b>Domain Wall 2:</b> Continuation of dynamics under varying field intensities.</p>
+    </div>
   </div>
 </div>
+
 
 ---
 
@@ -167,6 +192,14 @@ The models are analyzed by their performance on the
 4. **Lagrangian Neural Networks:** Use Lagrangian mechanics for energy conservation in modeling chaotic systems.
 
 ---
+<!-- Acknowledgements Section -->
+## Acknowledgements
+### Special thanks to:
+
+- [**Dr Matt Ellis**](https://www.sheffield.ac.uk/cs/people/academic/matt-ellis), for his Guidance and Supervision throughout my dissertation journey.
+- I would like to thank [**Patrick Kidger**](https://kidger.site/) for his very helpful Phd theses [On Neural Differential Equations](https://arxiv.org/abs/2202.02435) and his implementation of torchdiffeq library.
+
+- [**Alexander Norcliffe**](https://github.com/a-norcliffe), who helped out by pointing out the defeciencies in using First Order Neural ODEs for the Domain Wall Problem and suggested the approach of using Second Order Neural ODEs.
 
 ## Getting Started
 
