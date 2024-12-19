@@ -110,15 +110,20 @@ The models are analyzed by their performance on the
  three test sets one by one using **Error Metrics**, **visualizations** and **Vector Fields**.
 
 ### Lorenz Attractor Vector Fields
-<p align="center">
-  <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" width="30%" />
-  <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" width="30%" />
-  <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" width="30%" />
-</p>
-
-<p align="center">
-  **LSTM Vector Field Lorenz** &nbsp;&nbsp;&nbsp; **RNN Vector Field Lorenz** &nbsp;&nbsp;&nbsp; **NODE Vector Field Lorenz**
-</p>
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
+    <img src="PNG/readme/lorvflstm.png" alt="LSTM VF Lorenz" style="width: 100%; height: auto;">
+    <figcaption>LSTM Vector Field Lorenz</figcaption>
+  </figure>
+  <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
+    <img src="PNG/readme/lorvfrnn.png" alt="RNN VF Lorenz" style="width: 100%; height: auto;">
+    <figcaption>RNN Vector Field Lorenz</figcaption>
+  </figure>
+  <figure style="flex: 1 1 30%; max-width: 300px; text-align: center;">
+    <img src="PNG/readme/lorvfnode.png" alt="NODE VF Lorenz" style="width: 100%; height: auto;">
+    <figcaption>NODE Vector Field Lorenz</figcaption>
+  </figure>
+</div>
 
 ### Double Pendulum Vector Fields
 <div style="display: flex; justify-content: center; gap: 20px;">
